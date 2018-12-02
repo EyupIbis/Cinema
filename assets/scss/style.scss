@@ -1,0 +1,122 @@
+$menu-BGcolor: #415B76;
+$body-BGcolor: #7B9BA6;
+$text-color: white;
+
+body {
+  .header {
+    .fas {
+      padding-left: 15px;
+      color: $text-color;
+      text-decoration: none;
+    }
+    margin: 0;
+    background-color: #213a57;
+    font-family: 'Righteous', cursive;
+    font-size: 80px;
+    padding: 1px 0;
+    text-align: left;
+    border: 3px;
+    color: $text-color;
+    height: 110px;
+  }
+
+  .biosname {
+    padding-left: 15px;
+    padding-top: 10px;
+  }
+
+  .navbar {
+    a {
+      color: $text-color;
+      text-decoration: none;
+      font-family: 'Righteous', cursive;
+    }
+
+    a:hover {
+      color: $text-color;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-color: $menu-BGcolor;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  /* Style the navigation menu */
+  .navbar {
+    width: 100%;
+    background-color: $menu-BGcolor;
+    overflow: auto;
+  }
+  /* Navigation links */
+  .navbar a {
+    padding-left: 10px;
+    color: $text-color;
+    text-decoration: none;
+    font-size: 20px;
+    width: 25%;
+    /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center;
+    /* If you want the text to be centered */
+  }
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  input {
+    float: right;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 6px;
+    border: none;
+    font-size: 20px;
+    font-family: 'Righteous', cursive;
+  }
+
+  .movies {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1;
+    grid-row: 3;
+    background-color: $body-BGcolor;
+    padding: 10px;
+  }
+
+  img {
+    border-style: double;
+    border-color: $menu-BGcolor;
+  }
+
+  .movieimage:hover {
+    transform: scale(1.05);
+  }
+
+  .movieimage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 0;
+  }
+}
+
+.footerlijst {
+  margin:0px;
+  display: flex;
+  color: $text-color;
+  background-color: $menu-BGcolor;
+  flex-direction: row;
+justify-content: space-around;
+}
